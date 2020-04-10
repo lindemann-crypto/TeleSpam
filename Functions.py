@@ -168,7 +168,7 @@ async def getMembers(members_file, channel,client):
 
 	for participant in all_participants:
 		if participant.bot == False:
-			print(Fore.GREEN+'[ ! ] Получен пользователь id{id}'+Style.RESET_ALL)
+			print(Fore.GREEN+f'[ ! ] Получен пользователь id{id}'+Style.RESET_ALL)
 			all_users.append({"id": participant.id,
 				"first_name": participant.first_name,
 				"last_name": participant.last_name,
